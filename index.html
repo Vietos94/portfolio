@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/images/logo-no-background.png" <title>Personnal Portfolio</title>
+    <link href="/css/hamburgers.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/logo-no-background.png">
+    <title>Personnal Portfolio</title>
 </head>
 
 <body>
@@ -18,64 +20,92 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#profile-link">Get in Touch</a></li>
             </ul>
+
+            <div class="dropdown">
+                <button id="button" class="hamburger hamburger--collapse" type="button" aria-label="Menu"
+                    aria-controls="navigation">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <!-- <ul class="dropdown-list"> -->
+                    <a href="#welcome-section">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#profile-link">Get in Touch</a>
+                    <!-- </ul> -->
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section id="welcome-section" class="welcome-section">
-        <h1>Hi, I'm VL</h1>
-        <p>Front-End developer based in Ho Chi Minh City, Vietnam</p>
-    </section>
+    <main>
+        <section id="welcome-section" class="welcome-section">
+            <h1>Hi, I'm VL</h1>
+            <p>Front-End developer based in Ho Chi Minh City, Vietnam</p>
+        </section>
 
-    <section id="projects" class="projects-section">
-        <div class="section-header">
-            <h2>Projects</h2>
-        </div>
-        <a href="https://vietos94.github.io/website-style-guide/" target="_blank" class="project">Website Style
-            Guide</a>
-        <a href="https://vietos94.github.io/the-tea-cosy/" target="_blank" class="project">The Tea Cosy Website</a>
-        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
-            target="_blank" class="project">Dog or Cat Survey Form</a>
-        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page"
-            target="_blank" class="project">Peter Benjamin Parker Tribute Page</a>
-        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page"
-            target="_blank" class="project">Air Jordan 1 Product Landing Page</a>
-    </section>
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2>Projects</h2>
+            </div>
+            <a href="https://vietos94.github.io/website-style-guide/" target="_blank" class="links project-link">Website Style
+                Guide</a>
+                <hr>
+            <a href="https://vietos94.github.io/the-tea-cosy/" target="_blank" class="links project-link">The Tea Cosy Website</a>
+            <hr>
+            <a href="https://vietos94.github.io/the-playground/" target="_blank" class="links project-link">The Playground
+                Website</a>
+                <hr>
+            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                target="_blank" class="links project-link">Dog or Cat Survey Form</a>
+                <hr>
+            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page"
+                target="_blank" class="links project-link">Peter Benjamin Parker Tribute Page</a>
+                <hr>
+            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page"
+                target="_blank" class="links project-link">Air Jordan 1 Product Landing Page</a>
+                <hr>
+        </section>
 
-    <section id="skills" class="skills-section">
-        <div class="section-header">
-            <h2>Skills</h2>
-        </div>
-        <div class="skill-logo">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-git"></i>
-            <i class="fa-brands fa-github"></i>
-        </div>
-    </section>
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <h2>Skills</h2>
+            </div>
+            <div class="skill-logo">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-git"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </section>
 
-    <section id="contact" class="contact-section">
-        <div class="section-header">
-            <h2>Contact me</h2>
-        </div>
-        <div class="contact-links">
-            <a href="https://www.facebook.com/vietos94/" id="profile-link" class="links contact-details"
-                target="_blank"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
-            <a href="https://github.com/Vietos94" id="github" class="links contact-details" target="_blank"><i
-                    class="fa-brands fa-github"></i> GitHub</a>
-            <a href="mailto:n_vietlong@yahoo.com" class="links contact-details" target="_blank"><i
-                    class="fa-regular fa-envelope"></i> Email me</a>
-            <a href="https://api.whatsapp.com/send?phone=0084707138685" target="_blank" class="links contact-details"><i
-                    class="fa-brands fa-whatsapp"></i> Whatsapp me</a>
-        </div>
-    </section>
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2>Contact me</h2>
+            </div>
+            <div class="contact-links-container">
+                <a href="https://github.com/Vietos94" id="github" class="links contact-details" target="_blank"><i
+                        class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/viet-long-nguyen-5424322a/" id="profile-link"
+                    class="links contact-details" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://api.whatsapp.com/send?phone=0084707138685" target="_blank"
+                    class="links contact-details"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                <a href="mailto:n_vietlong@yahoo.com" class="links contact-details" target="_blank"><i
+                        class="fa-regular fa-envelope"></i> Email</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>© Copyright 2024. All rights reserved</p>
     </footer>
 
-    </div>
+    <script src="/javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/d7da6118d4.js" crossorigin="anonymous"></script>
+
 </body>
-<script src="https://kit.fontawesome.com/d7da6118d4.js" crossorigin="anonymous"></script>
 
 </html>
